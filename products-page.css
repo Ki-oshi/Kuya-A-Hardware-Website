@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap');
+
+:root{
+    --color-dark: #363949;
+    --color-danger: #FF0060;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --color-light: rgba(132, 139, 200, 0.18);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: var(--color-dark);
+}
+
+/* FOR NAV */
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    display: flex;
+    align-items: center;
+}
+
+.nav-branding img {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 10px;
+}
+
+.nav-branding span {
+    font-size: 2rem;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: var(--color-danger);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: white;
+}
+
+img{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--color-dark);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .footer-container{
+        display: block;
+    }
+}
+
+
+@media (min-width: 777px){
+    .nav-branding .logo{
+        width: 1rem;
+        height: 2rem;
+    }
+
+    .nav-branding span{
+        font-size: 1.3rem;
+        transition: 0.3 ease;
+    }
+}
+
+@media (max-width:437px){
+    .nav-branding span{
+        font-size: 1.5rem;
+        transition: 0.5 ease all;
+    }
+    .footer-info {
+        font-size: .8rem;
+        flex-direction: row;
+    }
+    .footer-info span{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* FOR NAV */
+
+
+
+
+/* BODY CONTENT */
+
+body{
+    background-color: rgba(179, 173, 173, 0.568);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: space-evenly;
+    margin: 1rem 3rem;
+    gap: 3rem;
+}
+
+.box{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+
+    box-shadow: var(--box-shadow);
+}
+
+.box:hover{
+    box-shadow: none;
+}
+
+.box .box-info{
+    padding: 1.5rem;
+    text-align: center
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin: -10 0;
+    font-size: 5px;
+}
+
+.btn button{
+    font-size: large;
+    border-radius: 10px;
+    padding: 5px;
+
+    transition: 0.3 ease all;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color: rgba(107, 106, 106, 0.288);
+}
+
+.box-info img{
+    height: 6rem;
+    width: 6rem;
+    margin: 0;
+}
+
+.box-info #title{
+    font-size: 1.5rem;
+}
+
+
+
+/* BODY CONTENT */
+
+
+
+
+
+
+/* FOOTER */
+
+
+.footer-container {
+    position: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-dark);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-info span {
+    font-weight: normal;
+}
+
+.footer-info p {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .footer-info {
+        font-size: .8rem;
+        flex-direction: row;
+    }
+    .footer-info span{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px){
+    .footer-container{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
+/* FOOTER */
+
+
+
+
+
+
