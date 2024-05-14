@@ -23,6 +23,7 @@ header{
     background-color: var(--color-dark);
 }
 
+
 /* FOR NAV */
 
 li{
@@ -173,9 +174,31 @@ img{
 
 /* BODY CONTENT */
 
-body{
-    background-color: rgba(179, 173, 173, 0.568);
+body {
+    position: relative;
+    z-index: 1;
 }
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    z-index: -1;
+}
+
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
 
 .container{
     display: grid;
