@@ -23,6 +23,7 @@ header{
     background-color: var(--color-dark);
 }
 
+
 /* FOR NAV */
 
 li{
@@ -42,6 +43,7 @@ a{
     padding: 0 24px;
     z-index: 10;
 }
+
 
 .nav-menu{
     display: flex;
