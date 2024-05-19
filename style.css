@@ -392,13 +392,14 @@ body > * {
 /* HOME CONTENT */
 
 
-/* FEEDBACK CONTENT */
+/* ABOUT STYLE */
 
-    .feedback-container{
-        margin: 2rem 5rem;
-    }
+.about-container{
+    display: flex;
+    border: 1px solid black;
+}
 
-/* FEEDBACK CONTENT */
+/* ABOUT STYLE */
 
 /* BODY CONTENT */
 
