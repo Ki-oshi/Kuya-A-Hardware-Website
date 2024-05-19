@@ -346,7 +346,7 @@ body > * {
 /* SLIDER */
 
 
-/* CONTENT */
+/* HOME CONTENT */
 
     .main-about{
         margin: 2rem;
@@ -389,10 +389,16 @@ body > * {
         text-justify: inter-word;
     }
 
+/* HOME CONTENT */
 
 
+/* FEEDBACK CONTENT */
 
-/* CONTENT */
+    .feedback-container{
+        margin: 2rem 5rem;
+    }
+
+/* FEEDBACK CONTENT */
 
 /* BODY CONTENT */
 
