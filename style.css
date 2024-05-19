@@ -41,7 +41,9 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    z-index: 10;
 }
+
 
 .nav-menu{
     display: flex;
@@ -122,6 +124,7 @@ img{
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        z-index: 11;
     }
 
 
@@ -261,6 +264,7 @@ body > * {
 /* SLIDER */
 .main-container{
     padding: 2rem;
+
 }
 
 .slider-wrapper{
@@ -350,6 +354,7 @@ body > * {
 
     .main-about{
         margin: 2rem;
+        
     }
 
     .main-info1{

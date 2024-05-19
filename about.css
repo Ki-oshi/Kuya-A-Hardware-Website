@@ -210,7 +210,12 @@ body{
 
 .about-child-container .about3{
     margin: 0;
-    padding: 1rem;
+    padding: 1px;
+}
+
+.about-child-container .about4 h3{
+    text-align: center;
+    margin: 0px;
 }
 
 /* BODY CONTENT */
