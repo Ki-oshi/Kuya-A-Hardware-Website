@@ -35,7 +35,7 @@
                         <a href="/about.html" class="nav-link">About</a>
                     </li>
 
-                <div class="hamburger">
+                <div class="hamburger" id="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -55,7 +55,8 @@
                 <a href="/products-page.html">Back</a>
             </div>
             <div class="product-details">
-                <h2>Phenolic Plywood</h2>
+                <h2>Plywood
+                    Ordinary & Marine</h2>
                 <table class="product-table1" border="0">
                     <tr>
                         <td align="left"><b>Materials</b></td>
@@ -111,15 +112,6 @@
             <p>© Kuya A Hardware. All rights reserved.</p>
         </footer>
     </div>
-
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('navMenu');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-    </script>
+    <script src="/script.js"></script>
 </body>
 </html>

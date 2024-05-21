@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
     <link rel="icon" type="image/x-icon" href="/img/logo.png">
@@ -16,27 +15,25 @@
             <nav class="navbar">
                 <a href="index.html" class="nav-branding">
                     <img src="img/logo.png">
-                    <span>Kuya A Hardware</span></a>
+                    <span>Kuya A Hardware</span>
+                </a>
 
                 <ul class="nav-menu">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
-
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Products</a>
+                        <a href="products-page.html" class="nav-link">Products</a>
                     </li>
-
                     <li class="nav-item">
                         <a href="feedback.html" class="nav-link">Feedbacks</a>
                     </li>
-
                     <li class="nav-item">
                         <a href="" class="nav-link">About</a>
                     </li>
                 </ul>
 
-                <div class="hamburger">
+                <div class="hamburger" id="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -75,7 +72,7 @@
                     <h3>Where to find us?</h3>
                 </div>
                 <div class="about3">
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!4v1716106551278!6m8!1m7!1sHyghHftMq4_UfZ-T5r44mw!2m2!1d14.61253481362628!2d121.171817640502!3f277.9052299287746!4f-10.275778578263854!5f0.7820865974627469" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!4v1716106551278!6m8!1m7!1sHyghHftMq4_UfZ-T5r44mw!2m2!1d14.61253481362628!2d121.171817640502!3f277.9052299287746!4f-10.275778578263854!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="about4">
                     <h3>Address here</h3><br>
@@ -87,16 +84,29 @@
 
     <div class="footer-container">
         <footer>
+            <center><h3>KuyAhardware@gmail.com</h3></center> <br>
             <div class="footer-info">
-                <i class="fas fa-phone"><span>0905-564-5990</span></i><br>
-                <i class="fas fa-phone"><span>0956-448-5846</span></i><br>
-                <i class="fas fa-phone"><span>0967-488-1128</span></i><br>
+                <i class="fas fa-phone">    <span>0905-564-5990</span></i>
+                 <br>
+                <i class="fas fa-phone">    <span>0956-448-5846</span></i>
+                 <br>
+                <i class="fas fa-phone">    <span>0967-488-1128</span></i>
+                 <br>
             </div>
             <p>© Kuya A Hardware. All rights reserved.</p>
         </footer>
     </div>
 
-    <script src="script.js"></script>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

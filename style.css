@@ -119,20 +119,20 @@ img {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        z-index: 1000; /* Set a higher z-index value */
+        z-index: 1000;
         overflow-y: auto;
         max-height: calc(100vh - 70px);
     }
 
     .nav-menu.active {
         left: 0;
-        overflow-y: auto; /* Allow scrolling within the menu */
-        position: fixed; /* Fix the menu in place */
-        z-index: 1100; /* Ensure the menu is on top of other content */
+        overflow-y: auto;
+        position: fixed;
+        z-index: 1100;
     }
     
     body.nav-active {
-        overflow: hidden; /* Disable scrolling on the body */
+        overflow: hidden;
     }
 
     .nav-menu.active {

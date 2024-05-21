@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="products-page.css">
     <link rel="icon" type="image/x-icon" href="/img/logo.png">
@@ -11,331 +11,311 @@
     <title>PRODUCTS</title>
 </head>
 <body>
-    
-    <div class="header" onscroll="stickyHeader">
-        <header>
-            <nav class="navbar">
-                <a href="index.html" class="nav-branding">
-                    <img src="/img/logo.png">
-                    <span>Kuya A Hardware</span></a>
+    <header class="header" onscroll="stickyHeader">
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding">
+                <img src="/img/logo.png">
+                <span>Kuya A Hardware</span></a>
 
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="/index.html" class="nav-link">Home</a>
-                    </li>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/products-page.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html" class="nav-link">Feedbacks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+            </ul>
 
-                    <li class="nav-item">
-                        <a href="/products-page.html" class="nav-link">Products</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="feedback.html" class="nav-link">Feedbacks</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
-                    </li>
-                </ul>
-
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </header>
-
-        </div>
-    </div>
-
-    <div class="all-content">
-
-        <div class="container">
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 1.png" alt="">
-                    <h3 id="title">Tubular Steel</h3>
-                    <p id="product-desc">Versatile steel tubes in sizes 1x1 to 2x2, ideal for construction projects requiring strength and durability.</p>
-                </div>
-                <div class="btn">
-                    <a href="products/prod1.html">
-                        <button>See Details</button>
-                    </a>
-                </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+        </nav>
+    </header>
 
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 2.png" alt="">
-                    <h3 id="title">PVC Pipes (Orange)</h3>
-                    <p id="product-desc">Corrosion-resistant PVC pipes in sizes #2, #3, and #4, ensuring efficient water flow for plumbing systems.</p>
-                </div>
-                <div class="btn">
-                    <a href="products/prod2.html">
-                        <button>See Details</button>
-                    </a>
-                </div>
-            </div>
+        <div class="all-content">
 
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 3.png" alt="">
-                    <h3 id="title">Steel Bar</h3>
-                    <p id="product-desc">High-grade steel bars in diameters 9mm to 16mm, offering reliable reinforcement for concrete structures..</p>
+            <div class="container">
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 1.png" alt="">
+                        <h3 id="title">Tubular Steel</h3>
+                        <p id="product-desc">Versatile steel tubes in sizes 1x1 to 2x2, ideal for construction projects requiring strength and durability.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod1.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn">
-                    <a href="products/prod3.html">
-                        <button>See Details</button>
-                    </a>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 2.png" alt="">
+                        <h3 id="title">PVC Pipes (Orange)</h3>
+                        <p id="product-desc">Corrosion-resistant PVC pipes in sizes #2, #3, and #4, ensuring efficient water flow for plumbing systems.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod2.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 4.png" alt="">
-                    <h3 id="title">Long Span Roof</h3>
-                    <p id="product-desc">Durable steel roof sheets in lengths of 8ft, 10ft, and 12ft, providing superior protection against the elements.</p>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 3.png" alt="">
+                        <h3 id="title">Steel Bar</h3>
+                        <p id="product-desc">High-grade steel bars in diameters 9mm to 16mm, offering reliable reinforcement for concrete structures..</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod3.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn">
-                    <a href="products/prod4.html">
-                        <button>See Details</button>
-                    </a>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 4.png" alt="">
+                        <h3 id="title">Long Span Roof</h3>
+                        <p id="product-desc">Durable steel roof sheets in lengths of 8ft, 10ft, and 12ft, providing superior protection against the elements.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod4.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 5.png" alt="">
-                    <h3 id="title">Eagle Cement – Advance Portland</h3>
-                    <p id="product-desc">Premium cement for durable concrete in foundations, walls, and pavements.</p>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 5.png" alt="">
+                        <h3 id="title">Eagle Cement – Advance Portland</h3>
+                        <p id="product-desc">Premium cement for durable concrete in foundations, walls, and pavements.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod5.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn">
-                    <a href="products/prod5.html">
-                        <button>See Details</button>
-                    </a>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 6.png" alt="">
+                        <h3 id="title">Big Elephant Tile Adhesive & Skim Coat</h3>
+                        <p id="product-desc">Reliable products for professional tiling and wall finishing projects.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod6.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 6.png" alt="">
-                    <h3 id="title">Big Elephant Tile Adhesive & Skim Coat</h3>
-                    <p id="product-desc">Reliable products for professional tiling and wall finishing projects.</p>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 7.png" alt="">
+                        <h3 id="title">Phenolic <br> Plywood</h3>
+                        <p id="product-desc">Moisture-resistant plywood sheets in thicknesses ½ and ¾, ideal for interior and exterior applications.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod7.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn">
-                    <a href="products/prod6.html">
-                        <button>See Details</button>
-                    </a>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 8.png" alt="">
+                        <h3 id="title">Plywood <br> Ordinary & Marine</h3>
+                        <p id="product-desc">Ordinary, ideal for general construction and carpentry, and Marine, designed for moisture-resistant applications like boat building and outdoor use.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod8.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 7.png" alt="">
-                    <h3 id="title">Phenolic <br> Plywood</h3>
-                    <p id="product-desc">Moisture-resistant plywood sheets in thicknesses ½ and ¾, ideal for interior and exterior applications.</p>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 9.png" alt="">
+                        <h3 id="title">PVC Fitting</h3>
+                        <p id="product-desc">Durable PVC fittings for leak-free plumbing connections in residential and commercial systems.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod9.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn">
-                    <a href="products/prod7.html">
-                        <button>See Details</button>
-                    </a>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 10.png" alt="">
+                        <h3 id="title">PPR - White</h3>
+                        <p id="product-desc">Heat and corrosion-resistant PPR pipes in sizes ½ and ¾, ensuring reliable water distribution.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod10.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 8.png" alt="">
-                    <h3 id="title">Plywood <br> Ordinary & Marine</h3>
-                    <p id="product-desc">Ordinary, ideal for general construction and carpentry, and Marine, designed for moisture-resistant applications like boat building and outdoor use.</p>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 11.png" alt="">
+                        <h3 id="title">Metal Farring</h3>
+                        <p id="product-desc">Sturdy strips for secure mounting of ceilings, drywall, and acoustic panels.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod11.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn">
-                    <a href="products/prod8.html">
-                        <button>See Details</button>
-                    </a>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 12.png" alt="">
+                        <h3 id="title">Metal Stud</h3>
+                        <p id="product-desc">Built with high-quality metal, they offer strength and stability, perfect for walls, partitions, and ceilings. Ideal for both residential and commercial use, ensuring ease of installation and lasting durability.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod12.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 9.png" alt="">
-                    <h3 id="title">PVC Fitting</h3>
-                    <p id="product-desc">Durable PVC fittings for leak-free plumbing connections in residential and commercial systems.</p>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 13.png" alt="">
+                        <h3 id="title">Bostik Vulcaseal</h3>
+                        <p id="product-desc">High-quality sealant for waterproofing joints and cracks.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod13.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn">
-                    <a href="products/prod9.html">
-                        <button>See Details</button>
-                    </a>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 14.png" alt="">
+                        <h3 id="title">Stikwell Wood Glue</h3>
+                        <p id="product-desc">Strong adhesive for woodworking projects and repairs.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod14.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 10.png" alt="">
-                    <h3 id="title">PPR - White</h3>
-                    <p id="product-desc">Heat and corrosion-resistant PPR pipes in sizes ½ and ¾, ensuring reliable water distribution.</p>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 15.png" alt="">
+                        <h3 id="title">Golden Bridge Welding Rod</h3>
+                        <p id="product-desc">Precision welding rods for various applications.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod15.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn">
-                    <a href="products/prod10.html">
-                        <button>See Details</button>
-                    </a>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 16.png" alt="">
+                        <h3 id="title">Hollow Blocks</h3>
+                        <p id="product-desc">Reliable blocks for sturdy walls and partitions in various sizes.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod16.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 11.png" alt="">
-                    <h3 id="title">Metal Farring</h3>
-                    <p id="product-desc">Sturdy strips for secure mounting of ceilings, drywall, and acoustic panels.</p>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 17.png" alt="">
+                        <h3 id="title">Boysen Flat Latex - White</h3>
+                        <p id="product-desc">Smooth, washable paint for walls and ceilings, providing a durable, matte finish.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod17.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn">
-                    <a href="products/prod11.html">
-                        <button>See Details</button>
-                    </a>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 18.png" alt="">
+                        <h3 id="title">Boysen Perma Coat Gloss Latex - White</h3>
+                        <p id="product-desc">Glossy, durable paint for a bright, luxurious finish on interior surfaces.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod18.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 12.png" alt="">
-                    <h3 id="title">Metal Stud</h3>
-                    <p id="product-desc">Built with high-quality metal, they offer strength and stability, perfect for walls, partitions, and ceilings. Ideal for both residential and commercial use, ensuring ease of installation and lasting durability.</p>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 19.png" alt="">
+                        <h3 id="title">White Sand</h3>
+                        <p id="product-desc"> Clean, fine sand ideal for construction and landscaping projects, providing a perfect base for bricklaying, concrete mixing, and sandboxes.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod19.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn">
-                    <a href="products/prod12.html">
-                        <button>See Details</button>
-                    </a>
+        
+                <div class="box">
+                    <div class="box-info">
+                        <img src="img/product 20.png" alt="">
+                        <h3 id="title">Crushed Gravel ¾</h3>
+                        <p id="product-desc">Durable gravel for driveways, pathways, and drainage systems.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="products/prod20.html">
+                            <button>See Details</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 13.png" alt="">
-                    <h3 id="title">Bostik Vulcaseal</h3>
-                    <p id="product-desc">High-quality sealant for waterproofing joints and cracks.</p>
-                </div>
-                <div class="btn">
-                    <a href="products/prod13.html">
-                        <button>See Details</button>
-                    </a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 14.png" alt="">
-                    <h3 id="title">Stikwell Wood Glue</h3>
-                    <p id="product-desc">Strong adhesive for woodworking projects and repairs.</p>
-                </div>
-                <div class="btn">
-                    <a href="products/prod14.html">
-                        <button>See Details</button>
-                    </a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 15.png" alt="">
-                    <h3 id="title">Golden Bridge Welding Rod</h3>
-                    <p id="product-desc">Precision welding rods for various applications.</p>
-                </div>
-                <div class="btn">
-                    <a href="products/prod15.html">
-                        <button>See Details</button>
-                    </a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 16.png" alt="">
-                    <h3 id="title">Hollow Blocks</h3>
-                    <p id="product-desc">Reliable blocks for sturdy walls and partitions in various sizes.</p>
-                </div>
-                <div class="btn">
-                    <a href="products/prod16.html">
-                        <button>See Details</button>
-                    </a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 17.png" alt="">
-                    <h3 id="title">Boysen Flat Latex - White</h3>
-                    <p id="product-desc">Smooth, washable paint for walls and ceilings, providing a durable, matte finish.</p>
-                </div>
-                <div class="btn">
-                    <a href="products/prod17.html">
-                        <button>See Details</button>
-                    </a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 18.png" alt="">
-                    <h3 id="title">Boysen Perma Coat Gloss Latex - White</h3>
-                    <p id="product-desc">Glossy, durable paint for a bright, luxurious finish on interior surfaces.</p>
-                </div>
-                <div class="btn">
-                    <a href="products/prod18.html">
-                        <button>See Details</button>
-                    </a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 19.png" alt="">
-                    <h3 id="title">White Sand</h3>
-                    <p id="product-desc"> Clean, fine sand ideal for construction and landscaping projects, providing a perfect base for bricklaying, concrete mixing, and sandboxes.</p>
-                </div>
-                <div class="btn">
-                    <a href="products/prod19.html">
-                        <button>See Details</button>
-                    </a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="box-info">
-                    <img src="img/product 20.png" alt="">
-                    <h3 id="title">Crushed Gravel ¾</h3>
-                    <p id="product-desc">Durable gravel for driveways, pathways, and drainage systems.</p>
-                </div>
-                <div class="btn">
-                    <a href="products/prod20.html">
-                        <button>See Details</button>
-                    </a>
-                </div>
-            </div>
-
     </div>
 
     <div class="footer-container">
         <footer>
             <div class="footer-info">
                 <i class="fas fa-phone">    <span>0905-564-5990</span></i>
-                 <br>
+                <br>
                 <i class="fas fa-phone">    <span>0956-448-5846</span></i>
-                 <br>
+                <br>
                 <i class="fas fa-phone">    <span>0967-488-1128</span></i>
-                 <br>
+                <br>
             </div>
             <p>© Kuya A Hardware. All rights reserved.</p>
         </footer>
     </div>
-
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('navMenu');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-    </script>
-    
 </body>
 </html>
