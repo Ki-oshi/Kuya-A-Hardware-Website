@@ -255,12 +255,26 @@ img {
 
 /* Small screens adjustments */
 @media(max-width: 437px){
+    .about-container {
+        margin: 1rem 2rem; /* Reduce the margin to increase width */
+        padding: 1rem;
+    }
+
     .about-child-container {
         padding: 1rem;
-        margin: 1rem;
+        margin: 1rem 0; /* Reduce the margin to increase width */
     }
 
     .about-child-container .about1 {
-        padding: 0.5rem;
+        padding: 1rem;
+        margin: 0; /* Remove margin to use full width */
+    }
+
+    .about-child-container .about1 p {
+        margin: 0.5rem; /* Adjust paragraph margin for better spacing */
+    }
+
+    .about-child-container .about3 iframe {
+        width: 100%; /* Ensure map iframe takes full width */
     }
 }
