@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap');
 
+/* Root Variables */
 :root {
     --color-dark: #363949;
     --color-danger: #FF0060;
@@ -10,6 +11,7 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -17,11 +19,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Header Styles */
 header {
     background-color: var(--color-dark);
 }
 
-/* FOR NAV */
+/* Navigation Styles */
 li {
     list-style: none;
 }
@@ -70,6 +73,7 @@ a {
     color: var(--color-danger);
 }
 
+/* Hamburger Menu */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -84,12 +88,13 @@ a {
     background-color: white;
 }
 
+/* General Image Styles */
 img {
     width: 5rem;
     height: 5rem;
 }
 
-/* Media Queries */
+/* Media Queries for Navbar and Footer */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -133,8 +138,18 @@ img {
         overflow: hidden;
     }
 
-    .nav-menu.active {
-        left: 0;
+    .nav-branding span {
+        font-size: 1.5rem;
+        transition: 0.5s ease;
+    }
+    
+    .footer-info {
+        font-size: 0.8rem;
+        flex-direction: row;
+    }
+
+    .footer-info span {
+        font-size: 0.8rem;
     }
 }
 
@@ -150,26 +165,7 @@ img {
     }
 }
 
-@media (max-width: 437px) {
-    .nav-branding span {
-        font-size: 1.5rem;
-        transition: 0.5s ease all;
-    }
-
-    .footer-info {
-        font-size: .8rem;
-        flex-direction: row;
-    }
-
-    .footer-info span {
-        font-size: 0.8rem;
-    }
-}
-
-/* FOR NAV */
-
-/* BODY CONTENT */
-
+/* Body Content */
 body {
     background-color: rgba(179, 173, 173, 0.568);
 }
@@ -230,8 +226,7 @@ body {
     font-size: 1.5rem;
 }
 
-/* FOOTER */
-
+/* Footer */
 .footer-container {
     position: block;
     left: 0;
@@ -258,99 +253,9 @@ body {
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-    .footer-info {
-        font-size: .8rem;
-        flex-direction: row;
-    }
-
-    .footer-info span {
-        font-size: 0.8rem;
-    }
-}
-
 @media (max-width: 320px) {
     .footer-container {
         text-align: center;
         font-size: 0.8rem;
     }
 }
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: var(--color-dark);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        z-index: 1000;
-        overflow-y: auto;
-        max-height: calc(100vh - 70px);
-    }
-
-    .nav-menu.active {
-        left: 0;
-        overflow-y: auto;
-        position: fixed;
-        z-index: 1100;
-    }
-    
-    body.nav-active {
-        overflow: hidden;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-}
-
-@media (min-width: 777px) {
-    .nav-branding .logo {
-        width: 1rem;
-        height: 2rem;
-    }
-
-    .nav-branding span {
-        font-size: 1.3rem;
-        transition: 0.3s ease;
-    }
-}
-
-@media (max-width: 437px) {
-    .nav-branding span {
-        font-size: 1.5rem;
-        transition: 0.5s ease all;
-    }
-
-    .footer-info {
-        font-size: .8rem;
-        flex-direction: row;
-    }
-
-    .footer-info span {
-        font-size: 0.8rem;
-    }
-}
-
-/* FOR NAV */

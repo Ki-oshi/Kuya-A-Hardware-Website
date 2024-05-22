@@ -1,5 +1,7 @@
+/* Importing Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap');
 
+/* Root Variables for easy theming and adjustments */
 :root {
     --color-dark: #363949;
     --color-danger: #FF0060;
@@ -10,6 +12,7 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
+/* Global Styles for consistency */
 * {
     margin: 0;
     padding: 0;
@@ -17,11 +20,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Header Styles */
 header {
     background-color: var(--color-dark);
 }
 
-/* NAV STYLES */
+/* Navigation Styles */
 li {
     list-style: none;
 }
@@ -31,6 +35,7 @@ a {
     text-decoration: none;
 }
 
+/* Navbar container styling */
 .navbar {
     min-height: 70px;
     display: flex;
@@ -40,6 +45,7 @@ a {
     z-index: 10;
 }
 
+/* Navigation menu styling */
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -47,6 +53,7 @@ a {
     gap: 60px;
 }
 
+/* Branding section in the navbar */
 .nav-branding {
     display: flex;
     align-items: center;
@@ -62,6 +69,7 @@ a {
     font-size: 2rem;
 }
 
+/* Navigation link styling */
 .nav-link {
     transition: 0.7s ease;
 }
@@ -70,6 +78,7 @@ a {
     color: var(--color-danger);
 }
 
+/* Hamburger menu styling for mobile */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -84,11 +93,15 @@ a {
     background-color: white;
 }
 
+/* General image styling */
 img {
     width: 5rem;
     height: 5rem;
 }
 
+/* Media Queries for responsiveness */
+
+/* Tablet and smaller screens */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -105,7 +118,7 @@ img {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -127,21 +140,13 @@ img {
         position: fixed;
         z-index: 1100;
     }
-    
+
     body.nav-active {
         overflow: hidden;
     }
-
-    .nav-menu.active {
-        left: 0;
-    }
 }
 
-    .footer-container {
-        display: block;
-    }
-
-
+/* Medium and larger screens */
 @media (min-width: 777px) {
     .nav-branding .logo {
         width: 1rem;
@@ -154,6 +159,7 @@ img {
     }
 }
 
+/* Small screens */
 @media (max-width: 437px) {
     .nav-branding span {
         font-size: 1.5rem;
@@ -161,7 +167,7 @@ img {
     }
 
     .footer-info {
-        font-size: .8rem;
+        font-size: 0.8rem;
         flex-direction: row;
     }
 
@@ -170,7 +176,7 @@ img {
     }
 }
 
-
+/* Footer Styles */
 .footer-container {
     position: relative;
     left: 0;
@@ -197,20 +203,21 @@ img {
     margin-top: 10px;
 }
 
-.about-container{
+/* About Section Styles */
+.about-container {
     display: flex;
     margin: 1rem 6rem;
     padding: 1rem;
     flex-direction: column;
 }
 
-.about-child-container{
+.about-child-container {
     margin: 2rem;
     padding: 2rem;
     width: 100%;
 }
 
-.about-child-container .about1{
+.about-child-container .about1 {
     border: 1px solid black;
     border-radius: 2rem;
     background-color: var(--color-dark);
@@ -219,7 +226,7 @@ img {
     text-align: justify;
 }
 
-.about-child-container .about1 p{
+.about-child-container .about1 p {
     margin: 10px;
 }
 
@@ -236,44 +243,9 @@ img {
     border: 0;
 }
 
-@media(max-width: 768px){
-    .hamburger{
-        display: block;
-    }
+/* More specific media queries for layout adjustments */
 
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    
-    .nav-menu{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: var(--color-dark);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .nav-item{
-        margin: 16px 0;
-    }
-
-    .nav-menu.active{
-        left: 0;
-    }
-}
-
+/* Large screens */
 @media(min-width: 769px) {
     .map {
         width: 80%;
@@ -281,39 +253,14 @@ img {
     }
 }
 
+/* Small screens adjustments */
 @media(max-width: 437px){
-    .nav-branding span{
-        font-size: 1.5rem;
-        transition: 0.5s ease all;
-    }
-
-    .footer-info {
-        font-size: 0.8rem;
-        flex-direction: row;
-    }
-
-    .footer-info span{
-        font-size: 0.8rem;
-    }
-
-    .about-child-container{
+    .about-child-container {
         padding: 1rem;
         margin: 1rem;
     }
 
     .about-child-container .about1 {
         padding: 0.5rem;
-    }
-}
-
-@media (min-width: 777px){
-    .nav-branding .logo{
-        width: 1rem;
-        height: 2rem;
-    }
-
-    .nav-branding span{
-        font-size: 1.3rem;
-        transition: 0.3s ease;
     }
 }

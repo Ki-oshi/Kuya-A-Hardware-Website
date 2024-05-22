@@ -1,6 +1,8 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap');
 
-:root{
+/* Root variables for reusability */
+:root {
     --color-dark: #363949;
     --color-danger: #FF0060;
 
@@ -12,18 +14,20 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
-*{
+/* Global styles for all elements */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-header{
+/* Styles for header element */
+header {
     background-color: var(--color-dark);
 }
 
-/* FOR NAV */
+/* Navigation styles */
 li {
     list-style: none;
 }
@@ -33,6 +37,7 @@ a {
     text-decoration: none;
 }
 
+/* Navbar styles */
 .navbar {
     min-height: 70px;
     display: flex;
@@ -40,7 +45,7 @@ a {
     align-items: center;
     padding: 0 24px;
     z-index: 10;
-    background-color: var(--color-dark); /* Change background color as needed */
+    background-color: var(--color-dark); /* Background color of navbar */
 }
 
 .nav-menu {
@@ -70,9 +75,10 @@ a {
 }
 
 .nav-link:hover {
-    color: var(--color-danger); /* Change hover color as needed */
+    color: var(--color-danger); /* Hover color for nav links */
 }
 
+/* Hamburger menu for mobile */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -87,12 +93,13 @@ a {
     background-color: white;
 }
 
+/* Styles for all img elements */
 img {
     width: 5rem;
     height: 5rem;
 }
 
-/* Media Queries */
+/* Media queries for responsive design */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -109,14 +116,14 @@ img {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    
+
     .nav-menu {
         position: fixed;
         left: -100%;
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: var(--color-dark); /* Change background color as needed */
+        background-color: var(--color-dark);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -131,16 +138,13 @@ img {
         position: fixed;
         z-index: 1100;
     }
-    
+
     body.nav-active {
         overflow: hidden;
     }
-
-    .nav-menu.active {
-        left: 0;
-    }
 }
 
+/* Adjustments for larger screens */
 @media (min-width: 777px) {
     .nav-branding .logo {
         width: 1rem;
@@ -153,6 +157,7 @@ img {
     }
 }
 
+/* Adjustments for smaller screens */
 @media (max-width: 437px) {
     .nav-branding span {
         font-size: 1.5rem;
@@ -160,13 +165,13 @@ img {
     }
 }
 
-/* BODY CONTENT */
-
-body{
+/* Body background color */
+body {
     background-color: rgba(179, 173, 173, 0.568);
 }
 
-.container{
+/* Container grid layout */
+.container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-content: space-evenly;
@@ -174,87 +179,87 @@ body{
     gap: 3rem;
 }
 
-.box{
+/* Box component styles */
+.box {
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 3;
-
     box-shadow: var(--box-shadow);
 }
 
-.box:hover{
+.box:hover {
     box-shadow: none;
 }
 
-.box .box-info{
+.box .box-info {
     padding: 1.5rem;
-    text-align: center
+    text-align: center;
 }
 
-.btn{
+/* Button styles */
+.btn {
     display: flex;
     justify-content: center;
     margin: -10 0;
     font-size: 5px;
 }
 
-.btn button{
+.btn button {
     font-size: large;
     border-radius: 10px;
     padding: 5px;
-
     transition: 0.3 ease all;
     cursor: pointer;
 }
 
-.btn button:hover{
+.btn button:hover {
     background-color: rgba(107, 106, 106, 0.288);
 }
 
-.box-info img{
+/* Box information styles */
+.box-info img {
     height: 6rem;
     width: 6rem;
     margin: 0;
 }
 
-.box-info #title{
+.box-info #title {
     font-size: 1.5rem;
 }
 
-/* PRODUCT DISPLAY */
-
-.product-container{
+/* Product display container */
+.product-container {
     border: 1px solid black;
     margin: 5rem;
     display: flex;
     padding: 4rem;
     flex: 1;
-    
     background-color: white;
     border-radius: 10rem;
 }
 
-.img{
+/* Image container styles */
+.img {
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
-.img img{
+.img img {
     width: 30rem;
     height: 30rem;
 }
 
-.back-btn{
+/* Back button styles */
+.back-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30rem;
-    margin-left: 10rem;
+    margin: 1rem;
 }
 
-.back-btn a{
+.back-btn a {
     color: black;
     font-size: large;
     margin: 0 5rem 0 5rem;
@@ -264,34 +269,38 @@ body{
     background-color: white;
 }
 
-.back-btn a:hover{
+.back-btn a:hover {
     background-color: rgba(107, 106, 106, 0.288);
 }
 
-.product-details{
+/* Product details styles */
+.product-details {
+    margin-left: auto;
     border: 1px solid rgba(0, 0, 0, 0);
+    max-width: 50%;
 }
 
-.product-details h2{
+.product-details h2 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.product-details .product-table1{
+.product-details .product-table1 {
     font-size: 1.25rem;
+    width: 100%;
 }
 
-.product-details .prod-prices{
+.product-details .prod-prices {
     margin-top: 2rem;
     text-align: center;
 }
 
-.product-details .prod-prices h3, .product-details .prod-prices li{
+.product-details .prod-prices h3,
+.product-details .prod-prices li {
     font-size: 20px;
 }
 
-/* FOOTER */
-
+/* Footer styles */
 .footer-container {
     position: block;
     left: 0;
@@ -318,37 +327,48 @@ body{
     margin-top: 10px;
 }
 
+/* Media query for footer on smaller screens */
+
 @media (max-width: 768px) {
     .footer-info {
         font-size: .8rem;
         flex-direction: row;
     }
-    .footer-info span{
+
+    .footer-info span {
         font-size: 0.8rem;
     }
 }
 
-@media (max-width: 320px){
-    .footer-container{
+@media (max-width: 320px) {
+    .footer-container {
         text-align: center;
         font-size: 0.8rem;
     }
+
+    .footer-info span {
+        font-size: 0.8rem;
+    }
 }
 
-/* Additional Responsive Styles */
+/* Additional responsive styles for product display */
 
-/* Adjustments for tablets and smaller devices */
 @media (max-width: 1200px) {
     .product-container {
         flex-direction: column;
         align-items: center;
-        margin: 2rem;
         padding: 2rem;
+        margin: 2rem;
     }
 
     .img img {
         width: 100%;
         height: auto;
+    }
+
+    .product-details {
+        margin-left: 0;
+        max-width: 100%;
     }
 
     .back-btn {
@@ -362,17 +382,19 @@ body{
     }
 }
 
-/* Adjustments for mobile devices */
+/* Adjustments for tablets and smaller devices */
+
 @media (max-width: 768px) {
     .product-details h2 {
         font-size: 1.5rem;
     }
 
-    .product-details .product-table1{
+    .product-details .product-table1 {
         font-size: 1rem;
     }
 
-    .product-details .prod-prices h3, .product-details .prod-prices li{
+    .product-details .prod-prices h3,
+    .product-details .prod-prices li {
         font-size: 1rem;
     }
 
@@ -381,24 +403,13 @@ body{
     }
 
     .footer-info i {
-        display: block;
-    }
-
-    .footer-info {
-        font-size: 0.8rem;
-    }
-
-    .footer-info span {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
-/* Adjustments for smaller mobile devices */
-@media (max-width: 480px) {
-    .nav-menu {
-        gap: 0;
-    }
+/* Adjust the details to be centered at a certain px */
 
+@media (max-width: 480px) {
     .product-container {
         margin: 1rem;
         padding: 1rem;
@@ -416,31 +427,8 @@ body{
         margin-top: 1rem;
     }
 
-    .product-details .prod-prices h3, .product-details .prod-prices li{
+    .product-details .prod-prices h3,
+    .product-details .prod-prices li {
         font-size: 0.9rem;
-    }
-
-    .back-btn a {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-    }
-}
-
-/* Adjustments for very small mobile devices */
-@media (max-width: 320px) {
-    .nav-branding span {
-        font-size: 1rem;
-    }
-
-    .nav-link {
-        font-size: 0.8rem;
-    }
-
-    .footer-container {
-        font-size: 0.7rem;
-    }
-
-    .footer-info span {
-        font-size: 0.7rem;
     }
 }
