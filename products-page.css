@@ -18,7 +18,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+ 
 /* Header Styles */
 header {
     background-color: var(--color-dark);
@@ -225,6 +225,26 @@ body {
 .box-info #title {
     font-size: 1.5rem;
 }
+
+@media (max-width: 320px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem;
+    }
+}
+
+
 
 /* Footer */
 .footer-container {
