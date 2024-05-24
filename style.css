@@ -332,7 +332,7 @@ body > * {
 }
 
 .slider.slider--collapsed {
-    margin-top: 70px; /* Adjust this value based on your header's height */
+    margin-top: 6rem; /* Adjust this value based on your header's height */
 }
 
 /* Slider keyframes */
