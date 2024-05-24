@@ -259,6 +259,10 @@ body {
     padding: 20px 0;
 }
 
+.footer-container footer h3{
+    font-size:medium;
+}
+
 .footer-info {
     display: flex;
     flex-wrap: wrap;
