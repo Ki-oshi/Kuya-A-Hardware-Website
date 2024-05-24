@@ -264,6 +264,33 @@ img {
     }
 }
 
+/* Web Developers Info */
+
+.developers{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.developers .dev-info{
+    text-align: center;
+}
+
+.dev-info i{
+    color: blue;
+    font-size: x-large;
+}
+
+.dev-info p a{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+.dev-info p a:hover{
+    color: var(--color-danger);
+}
+
 
 /* Footer Styles */
 .footer-container {
