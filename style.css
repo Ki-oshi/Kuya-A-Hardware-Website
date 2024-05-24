@@ -325,14 +325,14 @@ body > * {
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
     overflow: hidden;
-    margin-top: 0; /* Add this line */
-    transition: margin-top 0.3s ease; /* Add this line */
+    margin-top: 0;
+    transition: margin-top 0.3s ease;
     position: relative;
     z-index: 1;
 }
 
 .slider.slider--collapsed {
-    margin-top: 70px; /* Adjust this value based on your header's height */
+    margin-top: 100px;
 }
 
 /* Slider keyframes */

@@ -1,3 +1,4 @@
+/* Importing Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap');
 
 /* Root Variables */
@@ -65,6 +66,10 @@ a {
     font-size: 2rem;
 }
 
+.all-content {
+    transition: all 0.3s ease-in-out;
+}
+
 .nav-link {
     transition: 0.7s ease;
 }
@@ -77,6 +82,7 @@ a {
 .hamburger {
     display: none;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .bar {
@@ -128,12 +134,13 @@ img {
     }
 
     .nav-menu.active {
-        left: 0;
-        overflow-y: auto;
-        position: fixed;
-        z-index: 1100;
+        left: 0; /* Adjusted to remove animation property */
     }
-    
+
+    .nav-menu.inactive {
+        left: -100%; /* Adjusted to remove animation property */
+    }
+
     body.nav-active {
         overflow: hidden;
     }
@@ -142,7 +149,14 @@ img {
         font-size: 1.5rem;
         transition: 0.5s ease;
     }
-    
+
+
+    body.nav-active .feedback-container,
+    body.nav-active .all-content {
+        margin-top: 100px;
+        transition: margin-top 0.3s ease;
+    }
+
     .footer-info {
         font-size: 0.8rem;
         flex-direction: row;

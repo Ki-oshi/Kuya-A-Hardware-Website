@@ -93,6 +93,25 @@ img {
     height: 5rem;
 }
 
+/* Keyframes for sliding in and out the navigation menu */
+@keyframes slideIn {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
 /* Media Queries for Navbar */
 @media (max-width: 768px) {
     .hamburger {
@@ -110,7 +129,7 @@ img {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -120,7 +139,7 @@ img {
         background-color: var(--color-dark);
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: left 0.3s ease, opacity 0.3s ease;
         z-index: 1000;
         overflow-y: auto;
         max-height: calc(100vh - 70px);
@@ -128,11 +147,15 @@ img {
 
     .nav-menu.active {
         left: 0;
-        overflow-y: auto;
-        position: fixed;
-        z-index: 1100;
+        opacity: 1;
     }
     
+    .nav-menu.inactive {
+        left: -100%;
+        opacity: 0;
+        pointer-events: none;
+    }
+
     body.nav-active {
         overflow: hidden;
     }
@@ -153,7 +176,6 @@ img {
         font-size: 1.3rem;
         transition: 0.3s ease;
     }
-
 }
 
 /* Body Content */
@@ -164,6 +186,12 @@ body {
 .feedback-container {
     margin: 2rem 5rem;
     border: 1px solid rgba(0, 0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+body.nav-active .feedback-container {
+    margin-top: 100px;
+    transition: margin-top 0.3s ease;
 }
 
 .fb-child-container {
@@ -244,11 +272,6 @@ body {
     margin-bottom: 20px;
 }
 
-
-
-
-
-
 /* Footer */
 .footer-container {
     position: block;
@@ -282,7 +305,7 @@ body {
 
 @media (max-width: 768px) {
     .feedback-container {
-        margin: 2rem 5rem;
+        margin: 2rem 3rem;
     }
     .footer-info {
         font-size: 0.8rem;
@@ -299,5 +322,4 @@ body {
         text-align: center;
         font-size: 0.8rem;
     }
-    
 }

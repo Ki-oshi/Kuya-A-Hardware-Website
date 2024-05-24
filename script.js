@@ -1,28 +1,34 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const body = document.querySelector("body");
-const slider = document.querySelector(".slider");
+document.addEventListener("DOMContentLoaded", function() {
+    // Selecting necessary elements
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    const body = document.querySelector("body");
+    const slider = document.querySelector(".slider");
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-    body.classList.toggle("nav-active");
-    slider.classList.toggle("slider--collapsed");
+    // Event listener for hamburger menu click
+    hamburger.addEventListener("click", () => {
+        // Toggle active class for hamburger, navMenu, body, and slider
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        body.classList.toggle("nav-active");
+        slider.classList.toggle("slider--collapsed");
     });
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-    body.classList.remove("nav-active");
-    slider.classList.remove("slider--collapsed");
+    // Event listeners for navigation links
+    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+        // Remove active classes when a navigation link is clicked
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        body.classList.remove("nav-active");
+        slider.classList.remove("slider--collapsed");
 
-    const id = n.getAttribute("href").substring(1);
-    const target = document.getElementById(id);
-    target.scrollIntoView({ behavior: "smooth" });
-}));
+        // Scroll to the target section smoothly
+        const id = n.getAttribute("href").substring(1);
+        const target = document.getElementById(id);
+        target.scrollIntoView({ behavior: "smooth" });
+    }));
 
-
-document.addEventListener("DOMContentLoaded", function() {
+    // Event listener for feedback form submission
     const feedbackForm = document.getElementById("feedbackForm");
     const feedbackList = document.getElementById("feedbackList");
 
