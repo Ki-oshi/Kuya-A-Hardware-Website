@@ -134,11 +134,11 @@ img {
     }
 
     .nav-menu.active {
-        left: 0; /* Adjusted to remove animation property */
+        left: 0;
     }
 
     .nav-menu.inactive {
-        left: -100%; /* Adjusted to remove animation property */
+        left: -100%;
     }
 
     body.nav-active {
@@ -252,8 +252,8 @@ body {
     }
 
     .box {
-        width: 100%; /* Ensure boxes take the full width on small screens */
-        max-width: 100%; /* Prevent overflow */
+        width: 100%;
+        max-width: 100%;
     }
 }
 

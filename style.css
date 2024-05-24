@@ -292,7 +292,7 @@ body > * {
 .main-container {
     padding: 2rem;
     position: relative;
-    z-index: -1; /* Lower the z-index further */
+    z-index: -1;
 }
 
 /* Media queries for max-width 600px */

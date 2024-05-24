@@ -75,7 +75,7 @@ a {
 }
 
 .nav-link:hover {
-    color: var(--color-danger); /* Hover color for nav links */
+    color: var(--color-danger);
 }
 
 /* Hamburger menu for mobile */
