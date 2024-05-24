@@ -177,7 +177,7 @@ body {
     align-items: center;
     padding: 1rem;
     gap: 3rem;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the container */
 }
 
 .box {
@@ -221,7 +221,7 @@ body {
 .box-info img {
     height: 6rem;
     width: 6rem;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the images */
 }
 
 .box-info #title {
@@ -238,8 +238,8 @@ body {
     }
 
     .box {
-        width: 100%;
-        max-width: 100%;
+        width: 100%; /* Ensure boxes take the full width on small screens */
+        max-width: 100%; /* Prevent overflow */
     }
 }
 
