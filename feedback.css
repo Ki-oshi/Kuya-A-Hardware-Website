@@ -169,6 +169,84 @@ body {
     padding: 10rem;
 }
 
+.feedback-intro, .feedback-form, .feedback-success, .feedback-display {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback-form input, .feedback-form select, .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form .rating {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.feedback-form .rating input {
+    display: none;
+}
+
+.feedback-form .rating label {
+    font-size: 1.5rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.feedback-form .rating input:checked ~ label,
+.feedback-form .rating label:hover,
+.feedback-form .rating label:hover ~ label {
+    color: #ff0060;
+}
+
+.feedback-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0060;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.feedback-form button:hover {
+    background-color: #e60056;
+}
+
+.feedback-display .feedback-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.feedback-display .feedback-item:last-child {
+    border-bottom: none;
+}
+
+.feedback-display h3 {
+    margin-bottom: 20px;
+}
+
+
+
+
+
 /* Footer */
 .footer-container {
     position: block;

@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/img/logo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>KUYA A HARDWARE</title>
+    <title>KUYA A HARDWARE - Feedback</title>
 </head>
 <body>
     <div class="header">
@@ -43,20 +43,78 @@
     </div>
 
     <div class="body">
-        
+        <div class="feedback-intro">
+            <h1>We Value Your Feedback!</h1>
+            <p>Your thoughts and suggestions help us improve. Please take a moment to share your experience with us.</p>
+        </div>
+
+        <div class="feedback-form">
+            <form id="feedbackForm">
+                <label for="name">Name (optional):</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email (optional):</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="type">Feedback Type:</label>
+                <select id="type" name="type">
+                    <option value="general">General Feedback</option>
+                    <option value="bug">Bug Report</option>
+                    <option value="feature">Feature Request</option>
+                </select>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                
+                <label for="rating" style="text-align: center;">Rating:</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" title="5 stars">
+                        <span class="material-icons-sharp">
+                            star
+                        </span></label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 stars">
+                        <span class="material-icons-sharp">
+                            star
+                        </span></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 stars">
+                        <span class="material-icons-sharp">
+                            star
+                        </span></label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 stars">
+                        <span class="material-icons-sharp">
+                            star
+                        </span></label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 star">
+                        <span class="material-icons-sharp">
+                            star
+                        </span></label>
+                </div>
+                
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+
+        <div class="feedback-display">
+            <h3>What Others Are Saying</h3>
+            <div id="feedbackList"></div>
+        </div>
     </div>
 
     <div class="footer-container">
         <footer>
             <center><h3>KuyAhardware@gmail.com</h3></center> <br>
             <div class="footer-info">
-    
-                <i class="fas fa-phone">    <span>0905-564-5990</span></i>
-                 <br>
-                <i class="fas fa-phone">    <span>0956-448-5846</span></i>
-                 <br>
-                <i class="fas fa-phone">    <span>0967-488-1128</span></i>
-                 <br>
+                <i class="fas fa-phone"> <span>0905-564-5990</span></i>
+                <br>
+                <i class="fas fa-phone"> <span>0956-448-5846</span></i>
+                <br>
+                <i class="fas fa-phone"> <span>0967-488-1128</span></i>
+                <br>
             </div>
             <p>© Kuya A Hardware. All rights reserved.</p>
         </footer>
@@ -64,6 +122,4 @@
 
     <script src="script.js"></script>
 </body>
-
-
-
+</html>
